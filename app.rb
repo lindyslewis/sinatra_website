@@ -8,7 +8,7 @@ url =  'http://169.254.169.254/latest/meta-data/instance-id'
 
 uri = URI(url)
 #output = Net::HTTP.get(uri) # => String
-output = Localhost
+output = "Localhost"
 
 get '/' do 
   "hello world from instance number: #{output} "
